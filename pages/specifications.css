@@ -1,0 +1,8 @@
+@import url('../styles/common.css');
+
+.picture.picture--heading {
+    width: 100%;
+    max-width: 800px;
+
+    align-self: center;
+}

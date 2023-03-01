@@ -4,7 +4,7 @@ const cars = [
     {title: 'Toyota Corolla', photo: 'corolla.png'},
     {title: 'Toyota Mark 2', photo: 'mark2.png'},
     {title: 'Mazda RX7', photo: 'rx7.png'},
-    {title: 'Subaru Impreza WRX', photo: 'wrx-sti.png'},
+    {title: 'Subaru Impreza WRX', photo: 'wrx-sti.png', redirectTo: './pages/specifications.html'},
     {title: 'Nissan Silvia S15', photo: 'silvia-s15.png'},
     {title: 'Jaguar F-Type', photo: 'jaguar-f-type.png'},
 ]
@@ -27,27 +27,35 @@ function appendCardElement(target, car) {
     target.appendChild(createCardElement(car))
 }
 
-function createCardElement({title, photo}) {
+function createCardElement(options) {
     const rootClassName = 'car-catalog-card' 
-
     const $root = document.createElement('div')
-    
+
     $root.className = rootClassName
     $root.append(
-        createCardPhotoElement(rootClassName, photo), 
-        createCardTitleElement(rootClassName, title)
+        createCardPhotoElement(rootClassName, options.photo), 
+        createCardTitleElement(rootClassName, options)
     )
     
     return $root
 }
 
-function createCardTitleElement(rootClassName, title) {
+function createCardTitleElement(rootClassName, {title, redirectTo}) {
     const $title = document.createElement('h4')
 
     $title.className = `${rootClassName}__title`
     $title.innerText = title
 
-    return $title
+    return redirectTo ? createTitleLinkElement(redirectTo, $title) : $title
+}
+
+function createTitleLinkElement(redirectTo, $title) {
+    const $anchor = document.createElement('a')
+    
+    $anchor.href = redirectTo
+    $anchor.appendChild($title)
+
+    return $anchor
 }
 
 function createCardPhotoElement(rootClassName, photo) {
