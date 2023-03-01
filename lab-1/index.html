@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="./attach-catalog.js"></script>
+
+    <title>Автомобильный каталог - Добро пожаловать!</title>
+</head>
+<body>
+    <div class="root">
+        <header class="app-bar">
+            <div class="app-bar__container">
+                <a href="#">
+                    <div class="app-logo">
+                        <div class="app-logo__photo"></div>
+                        <div class="app-logo__title">Cars Catalog</div>
+                    </div>
+                </a>
+                <div class="nav-links">
+                    <ul class="nav-links__list">
+                        <li class="nav-links__list-item">
+                            <a href="#">
+                                <div class="nav-link-icon nav-link-icon--github"></div>
+                            </a>
+                        </li>
+                        <li class="nav-links__list-item">
+                            <a href="https://t.me/andrew_ku" target="_blank">
+                                <div class="nav-link-icon nav-link-icon--telegram"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="section section--welcome">
+            <div class="section__container">
+                <h3 class="section__title">Добро пожаловать!</h3>
+                <div class="section__main">
+                    <p class="paragraph">
+                        Рад видеть Вас на своём сайте, посвящённом автомобилям.
+                        Для меня автомобиль - нечто гораздо большее, нежели просто
+                        средство передвижения. Это произведение искусства, результат труда
+                        большого количества инженеров и множества специалистов разного профиля.
+                        Вождение доставляет огромное удовольствие, 
+                        оказывает медитативное воздействие.
+                    </p>
+                    <p class="paragraph">
+                        С ранних лет автомобили и техника в целом являются объектом 
+                        повышенного интереса. Поэтому и решил выбрать данную тематику для сайта. 
+                        Ниже представлен небольшой каталог в виде карточек 
+                        с названием и изображением автомобиля. 
+                    </p>
+                    <p class="paragraph">
+                        Сразу оговорюсь, что реализация и задумка не выводилась 
+                        в идеал. Цель - просто показать владение техниками и инструментами. 
+                    </p>
+                    <p class="paragraph">
+                        При нажатии на карточку с автомобилем <b>"Subaru Impreza WRX"</b> будет осуществлён переход 
+                        на страничку с более детальной информацией   
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--catalog">
+            <div class="section__container">
+                <h3 class="section__title">Каталог</h3>
+                <div class="section__main">
+                    <div id="car-catalog" class="car-catalog"></div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
