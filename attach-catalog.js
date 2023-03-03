@@ -4,7 +4,7 @@ const cars = [
     {title: 'Toyota Corolla', photo: 'corolla.png'},
     {title: 'Toyota Mark 2', photo: 'mark2.png'},
     {title: 'Mazda RX7', photo: 'rx7.png'},
-    {title: 'Subaru Impreza WRX', photo: 'wrx-sti.png', redirectTo: './pages/specifications.html'},
+    {title: 'Subaru Impreza WRX', photo: 'wrx-sti.png', redirectTo: './pages/specs/specifications.html'},
     {title: 'Nissan Silvia S15', photo: 'silvia-s15.png'},
     {title: 'Jaguar F-Type', photo: 'jaguar-f-type.png'},
 ]
