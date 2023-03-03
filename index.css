@@ -1,5 +1,16 @@
 @import url('./styles/common.css');
 
+.section.section--welcome .section__main .picture.picture--heading {
+    align-self: center;
+    max-width: 100%;
+}
+
+@media (min-width: 629px) {
+    .section.section--welcome .section__main .picture.picture--heading {
+        max-width: 550px;
+    }   
+}
+
 .car-catalog {
     display: grid;
     grid-template-columns: 1fr;
@@ -10,12 +21,17 @@
 }
 
 .car-catalog-card {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: .5rem;
+
     padding: 1rem .5rem;
     border-radius: .25rem;
     box-shadow: var(--box-shadow--regular);
+
     transition-property: box-shadow;
     transition-duration: var(--duration--regular);
 }
@@ -54,7 +70,7 @@
     transition-duration: var(--duration--regular);
 }
 
-@media (min-width: 280px) {
+@media (min-width: 280px) and (max-width: 319px) {
     .car-catalog-card__photo {
         --photo-width: 185px;
     
@@ -67,7 +83,9 @@
     .section__container {
         padding: 1rem;
     }
+}
 
+@media (min-width: 320px) and (max-width: 434px) {
     .car-catalog-card__photo {
         --photo-width: 200px;
     
@@ -77,19 +95,21 @@
 }
 
 @media (min-width: 435px) {
+    .car-catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 435px) and (max-width: 534px) {
     .car-catalog-card__photo {
         --photo-width: 175px;
     
         width: var(--photo-width);
         height: calc(var(--photo-width) * var(--car-catalog-card--aspect-ratio));
     }
-
-    .car-catalog {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
-@media (min-width: 535px) {
+@media (min-width: 535px) and (max-width: 629px) {
     .car-catalog-card__photo {
         --photo-width: 220px;
     
@@ -98,7 +118,7 @@
     }
 }
 
-@media (min-width: 630px) {
+@media (min-width: 630px) and (max-width: 767px) {
     .car-catalog-card__photo {
         --photo-width: 230px;
     
@@ -107,8 +127,14 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 899px) {
     .car-catalog {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .car-catalog {
+        grid-template-columns: repeat(4, 1fr);
     }
 }

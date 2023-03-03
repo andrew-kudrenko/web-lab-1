@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./specifications.css">
  
     <title>Автомобильный каталог - Характеристики</title>
@@ -18,7 +18,7 @@
     <div class="root">
         <header class="app-bar">
             <div class="app-bar__container">
-                <a href="../index.html">
+                <a href="../../index.html">
                     <div class="app-logo">
                         <div class="app-logo__photo"></div>
                         <div class="app-logo__title">Cars Catalog</div>
@@ -27,11 +27,21 @@
                 <div class="nav-links">
                     <ul class="nav-links__list">
                         <li class="nav-links__list-item">
+                            <li class="nav-links__list-item">
+                                <a href="../../index.html">
+                                  Главная
+                                </a>
+                            </li>
+                            <a href="../history/history.html">
+                              История
+                            </a>
+                        </li>
+                        <li class="nav-links__list-item nav-links__list-item--external">
                             <a href="https://github.com/andrew-kudrenko/web-lab-1" target="_blank">
                                 <div class="nav-link-icon nav-link-icon--github"></div>
                             </a>
                         </li>
-                        <li class="nav-links__list-item">
+                        <li class="nav-links__list-item nav-links__list-item--external">
                             <a href="https://t.me/andrew_ku" target="_blank">
                                 <div class="nav-link-icon nav-link-icon--telegram"></div>
                             </a>
@@ -47,7 +57,7 @@
                 <div class="section__main">
                     <img 
                         class="picture picture--heading" 
-                        src="../assets/images/subaru-impreza-wrx-blue.jpg" 
+                        src="../../assets/images/subaru-impreza-wrx-blue.jpg" 
                         alt="Subaru Impreza WRX"
                     >
 
@@ -85,7 +95,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section section--specs">
             <div class="section__container">
                 <h3 class="section__title text-center">Характеристики</h3>
                 <div class="section__main">
@@ -132,6 +142,18 @@
                 </div>
             </div>
         </section>
+
+        <footer class="app-footer">
+            <div class="app-footer__container">
+                <div class="author-info">
+                    <div class="author-info__title">Сайт "Cars Catalog"</div>
+                    <div class="author-info__created-by">
+                        Разработал <em>Андрей Кудренко</em>, 
+                        студент группы <em>ИТ-202</em>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

@@ -1,0 +1,38 @@
+@import url('../../styles/common.css');
+
+.section--welcome .picture.picture--heading {
+    align-self: center;
+    max-width: 100%;
+}
+
+.section--generation .paragraph--with-photo .paragraph__photo .picture {
+    max-width: 100%;
+}
+
+@media (min-width: 629px) {
+    .section.section--generation .paragraph--with-photo {
+        flex-direction: row;
+    }
+
+    .section.section--generation:nth-of-type(even) .paragraph--with-photo {
+        flex-direction: row-reverse;
+    }
+
+    .section--generation .paragraph--with-photo .paragraph__photo .picture {
+        max-width: 350px;
+    }
+}
+
+.section--rally .section__title {
+    text-align: center;
+}
+
+.section--rally .picture--rally {
+    max-width: 700px;
+    align-self: center;
+}
+
+.pilots-list .pilots-list__item {
+    list-style-type: square;
+    font-weight: bold;
+}
