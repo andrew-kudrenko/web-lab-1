@@ -29,6 +29,8 @@
 
 .section--rally .picture--rally {
     max-width: 700px;
+    width: 100%;
+    
     align-self: center;
 }
 
